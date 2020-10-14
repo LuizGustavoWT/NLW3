@@ -53,7 +53,7 @@ export class createOrphanages1602642583772 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        queryRunner.dropTable('orphanages');
+        await queryRunner.dropTable('orphanages');
     }
 
 }
